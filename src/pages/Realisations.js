@@ -11,7 +11,7 @@ const Realisation = () => {
             <h2 className="text-center">Mes réalisations</h2>
             <div className="row">
 
-                <div className="col-4">
+                <div className="col-4 mb-4">
                     <div className="card">
                         <img src={project1} alt="Coder" className="card-img-top" />
                         <div className="card-body text-center">
@@ -22,7 +22,7 @@ const Realisation = () => {
                     </div>
                 </div>
 
-                <div className="col-4">
+                <div className="col-4 mb-4">
                     <div className="card">
                         <img src={project2} alt="Espace Bien-Etre" className="card-img-top" />
                         <div className="card-body text-center">
@@ -33,7 +33,7 @@ const Realisation = () => {
                     </div>
                 </div>
 
-                <div className="col-4">
+                <div className="col-4 mb-4">
                     <div className="card">
                         <img src={project3} alt="Fresh Food" className="card-img-top" />
                         <div className="card-body text-center">
@@ -44,7 +44,7 @@ const Realisation = () => {
                     </div>
                 </div>
 
-                <div className="col-4">
+                <div className="col-4 mb-4">
                     <div className="card">
                         <img src={project4} alt="Restaurant Japonais" className="card-img-top" />
                         <div className="card-body text-center">
@@ -54,7 +54,7 @@ const Realisation = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-4">
+                <div className="col-4 mb-4">
                     <div className="card">
                         <img src={project5} alt="screens" className="card-img-top" />
                         <div className="card-body text-center">
@@ -65,7 +65,7 @@ const Realisation = () => {
                     </div>
                 </div>
 
-                <div className="col-4">
+                <div className="col-4 mb-4">
                     <div className="card">
                         <img src={project6} alt="seo" className="card-img-top" />
                         <div className="card-body text-center">
