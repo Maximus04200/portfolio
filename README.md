@@ -1,5 +1,11 @@
 # Portfolio - Martin Di Nota
 
+## Instructions d'installation
+ouvrir un terminal/
+npm install puis ensuite 
+npm start
+
+
 ## Description de mon projet avec react.js :
 Ce projet est mon portfolio personnel créé dans le cadre de ma formation développeur web full stack a l'école CEF. Il présente mes compétences, mes réalisations et mes services.
 

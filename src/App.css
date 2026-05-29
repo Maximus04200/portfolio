@@ -4,6 +4,10 @@
   min-height: 100vh;
 }
 
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 main {
   flex: 1;
 }
@@ -70,4 +74,13 @@ footer a:hover i {
 
 .nav-link {
   text-transform: uppercase;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.btn:hover {
+  filter: brightness(0.85);
+  transition: all 0.3s ease;
 }
