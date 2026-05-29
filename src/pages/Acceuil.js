@@ -49,30 +49,30 @@ const Accueil = () => {
                     </div>
                     <div className="col-6">
                         <p>Voici ma présentation...</p>
+
+                        <h3>Mes compétences</h3>
+                        <p>HTML5 90%</p>
+                        <div className="progress mb-3">
+                            <div className="progress-bar bg-danger" style={{ width: "90%" }}></div>
+                        </div>
+                        <p>CSS3 80%</p>
+                        <div className="progress mb-3">
+                            <div className="progress-bar bg-info" style={{ width: "80%" }}></div>
+                        </div>
+                        <p>JavaScript 40%</p>
+                        <div className="progress mb-3">
+                            <div className="progress-bar bg-warning" style={{ width: "40%" }}></div>
+                        </div>
+                        <p>PHP 10%</p>
+                        <div className="progress mb-3">
+                            <div className="progress-bar bg-success" style={{ width: "10%" }}></div>
+                        </div>
+                        <p>React 50%</p>
+                        <div className="progress mb-3">
+                            <div className="progress-bar bg-primary" style={{ width: "50%" }}></div>
+                        </div>
                     </div>
                 </div>
-                <h3>Mes compétences</h3>
-                <p>HTML5 90%</p>
-                <div className="progress mb-3">
-                    <div className="progress-bar bg-danger" style={{ width: "80%" }}></div>
-                </div>
-                <p>CSS3 80%</p>
-                <div className="progress mb-3">
-                    <div className="progress-bar bg-info" style={{ width: "60%" }}></div>
-                </div>
-                <p>JavaScript 40%</p>
-                <div className="progress mb-3">
-                    <div className="progress-bar bg-info" style={{ width: "40%" }}></div>
-                </div>
-                <p>PHP 10%</p>
-                <div className="progress mb-3">
-                    <div className="progress-bar bg-info" style={{ width: "10%" }}></div>
-                </div>
-                <p>MySQL 10%</p>
-                <div className="progress mb-3">
-                    <div className="progress-bar bg-info" style={{ width: "10%" }}></div>
-                </div>
-
             </section>
         </div>
     );
