@@ -2,7 +2,7 @@ import heroBg from "../components/img/images/hero-bg.jpg";
 import profile from "../components/img/images/john-doe-about.jpg";
 import { useState, useEffect } from "react";
 import Modal from "../components/Modal.js";
-
+import competences from "../data/competences.js";
 
 
 
@@ -48,28 +48,16 @@ const Accueil = () => {
                         <img src={profile} alt="Martin Di Nota" className="img-fluid" />
                     </div>
                     <div className="col-6">
-<p>Bonjour je me présente Martin Di Nota. Je suis un jeune développeur web. Actuellement en formation en tant que développeur full stack à l'école CEF. J'ai débuté ma formation en avril 2026. Je vous présente mon portfolio créé par mes propres compétences.</p>
+                        <p>Bonjour je me présente Martin Di Nota. Je suis un jeune développeur web. Actuellement en formation en tant que développeur full stack à l'école CEF. J'ai débuté ma formation en avril 2026. Je vous présente mon portfolio créé par mes propres compétences.</p>
                         <h3>Mes compétences</h3>
-                        <p>HTML5 90%</p>
-                        <div className="progress mb-3">
-                            <div className="progress-bar bg-danger" style={{ width: "90%" }}></div>
-                        </div>
-                        <p>CSS3 80%</p>
-                        <div className="progress mb-3">
-                            <div className="progress-bar bg-info" style={{ width: "80%" }}></div>
-                        </div>
-                        <p>JavaScript 40%</p>
-                        <div className="progress mb-3">
-                            <div className="progress-bar bg-warning" style={{ width: "40%" }}></div>
-                        </div>
-                        <p>PHP 10%</p>
-                        <div className="progress mb-3">
-                            <div className="progress-bar bg-success" style={{ width: "10%" }}></div>
-                        </div>
-                        <p>React 50%</p>
-                        <div className="progress mb-3">
-                            <div className="progress-bar bg-primary" style={{ width: "50%" }}></div>
-                        </div>
+                        {competences.map((comp) => (
+                            <div key={comp.id}>
+                                <p>{comp.nom} {comp.pourcentage}%</p>
+                                <div className="progress mb-3">
+                                    <div className={`progress-bar ${comp.couleur}`} style={{ width: `${comp.pourcentage}%` }}></div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
