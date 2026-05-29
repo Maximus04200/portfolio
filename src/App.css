@@ -67,3 +67,7 @@ footer a:hover i {
   color: #aaaaaa !important;
   transition: color 0.3s ease;
 }
+
+.nav-link {
+  text-transform: uppercase;
+}

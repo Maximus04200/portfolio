@@ -48,8 +48,7 @@ const Accueil = () => {
                         <img src={profile} alt="Martin Di Nota" className="img-fluid" />
                     </div>
                     <div className="col-6">
-                        <p>Voici ma présentation...</p>
-
+<p>Bonjour je me présente Martin Di Nota. Je suis un jeune développeur web. Actuellement en formation en tant que développeur full stack à l'école CEF. J'ai débuté ma formation en avril 2026. Je vous présente mon portfolio créé par mes propres compétences.</p>
                         <h3>Mes compétences</h3>
                         <p>HTML5 90%</p>
                         <div className="progress mb-3">
