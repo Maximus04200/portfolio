@@ -33,10 +33,10 @@ const Accueil = () => {
                 <div className="hero-content">
                     <h1>Martin Di Nota</h1>
                     <h2>Développeur Web</h2>
-                    <button onClick={() => setModalOpen(true)} className="btn btn-primary">
+                    <button onClick={toggleModal} className="btn btn-primary">
                         En savoir plus
                     </button>
-                    {modalOpen && <Modal githubData={githubData} onClose={() => setModalOpen(false)} />}
+                    {modalOpen && <Modal githubData={githubData} onClose={toggleModal} />}
                 </div>
             </div>
 
