@@ -1,7 +1,30 @@
 import heroBg from "../components/img/images/hero-bg.jpg";
 import profile from "../components/img/images/john-doe-about.jpg";
+import { useState, useEffect } from "react";
+import Modal from "../components/Modal.js";
+
+
+
 
 const Accueil = () => {
+
+    const [githubData, setGithubData] = useState(null);
+
+    useEffect(() => {
+        fetch("https://api.github.com/users/Maximus04200")
+            .then(res => res.json())
+            .then(data => {
+                setGithubData(data);
+                console.log(data);
+            });
+    }, []);
+
+    const [modalOpen, setModalOpen] = useState(false);
+
+    const toggleModal = () => {
+        setModalOpen(!modalOpen);
+    };
+
     return (
         <div>
             {/* Hero */}
@@ -10,11 +33,14 @@ const Accueil = () => {
                 <div className="hero-content">
                     <h1>Martin Di Nota</h1>
                     <h2>Développeur Web</h2>
-                    <button className="btn btn-primary">En savoir plus</button>
+                    <button onClick={() => setModalOpen(true)} className="btn btn-primary">
+                        En savoir plus
+                    </button>
+                    {modalOpen && <Modal githubData={githubData} onClose={() => setModalOpen(false)} />}
                 </div>
             </div>
 
-            
+
             <section className="container my-5">
                 <h2>À propos</h2>
                 <div className="row">
@@ -24,7 +50,7 @@ const Accueil = () => {
                     <div className="col-6">
                         <p>Voici ma présentation...</p>
                     </div>
-                </div>             
+                </div>
                 <h3>Mes compétences</h3>
                 <p>HTML5 90%</p>
                 <div className="progress mb-3">
@@ -46,7 +72,7 @@ const Accueil = () => {
                 <div className="progress mb-3">
                     <div className="progress-bar bg-info" style={{ width: "10%" }}></div>
                 </div>
-                
+
             </section>
         </div>
     );
