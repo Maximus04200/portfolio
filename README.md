@@ -34,3 +34,6 @@ Pour modifier les compétences : src/data/competences.js
 - Réalisations : mes projets pour l'instant aucun 
 - Contact : formulaire et carte Google Maps (fausse adresse)
 - Mentions légales : informations légales 
+
+## W3C
+Les captures d'écran des validations W3C sont disponibles dans le dossier `screens W3C/`.
