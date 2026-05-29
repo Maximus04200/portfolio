@@ -1,37 +1,49 @@
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
-  return (
-    <footer className="bg-dark text-white mt-auto py-4">
-      <div className="container">
-        <div className="row">
+    return (
+        <footer className="bg-dark text-white mt-auto py-4">
+            <div className="container">
+                <div className="row">
 
-          
-          <div className="col-4">
-            <p>Martin Di Nota</p>
-            <p>71 chemin de bois domenge</p>
-            <p>06 15 44 28 24</p>
-          </div>
 
-          
-          <div className="col-4">
-            <NavLink to="/" className="text-white d-block">Accueil</NavLink>
-            <NavLink to="/services" className="text-white d-block">Services</NavLink>
-            <NavLink to="/realisations" className="text-white d-block">Réalisations</NavLink>
-            <NavLink to="/contact" className="text-white d-block">Contact</NavLink>
-          </div>
+                    <div className="col-4">
+                        <p>Martin Di Nota</p>
+                        <p>71 chemin de bois domenge</p>
+                        <p>06 15 44 28 24</p>
+                        <div className="mt-3">
+                            <a href="https://github.com/Maximus04200" target="_blank" rel="noopener noreferrer nofollow" className="text-white me-3">
+                                <i className="bi bi-github fs-4"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-white me-3">
+                                <i className="bi bi-twitter fs-4"></i>
+                            </a>
+                            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer nofollow" className="text-white">
+                                <i className="bi bi-linkedin fs-4"></i>
+                            </a>
+                        </div>
+                    </div>
 
-          
-          <div className="col-4">
-            <NavLink to="/realisations" className="text-white d-block">Projet 1</NavLink>
-            <NavLink to="/realisations" className="text-white d-block">Projet 2</NavLink>
-            <NavLink to="/realisations" className="text-white d-block">Projet 3</NavLink>
-          </div>
 
-        </div>
-      </div>
-    </footer>
-  );
+                    <div className="col-4">
+                        <NavLink to="/" className="text-white d-block">Accueil</NavLink>
+                        <NavLink to="/services" className="text-white d-block">Services</NavLink>
+                        <NavLink to="/realisations" className="text-white d-block">Réalisations</NavLink>
+                        <NavLink to="/contact" className="text-white d-block">Contact</NavLink>
+                    </div>
+
+
+                    <div className="col-4">
+                        <NavLink to="/realisations" className="text-white d-block">Projet 1</NavLink>
+                        <NavLink to="/realisations" className="text-white d-block">Projet 2</NavLink>
+                        <NavLink to="/realisations" className="text-white d-block">Projet 3</NavLink>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;
